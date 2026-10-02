@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALGOMENTOR — AI Algorithm Tutor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo"><span class="logo-mark">&lt;/&gt;</span> ALGOMENTOR</a>
+      <nav>
+        <a href="#learn">Learn</a>
+        <a href="#practice">Practice</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="pill">AI-powered learning</p>
+        <h1>Master Algorithms.<br />Think Smarter.</h1>
+        <p class="lead">Learn algorithms through simple explanations, real examples and quick quizzes.</p>
+      </div>
+    </section>
+
+    <section class="wrap" id="learn">
+      <div class="panel chooser">
+        <div>
+          <p class="step">Step 1 · Choose an algorithm</p>
+          <h2>What do you want to learn?</h2>
+          <p class="muted">Pick an algorithm and your AI mentor will explain it in a beginner-friendly way.</p>
+        </div>
+        <div class="chooser-actions">
+          <label for="algoSelect" class="sr-only">Algorithm</label>
+          <select id="algoSelect" disabled>
+            <option value="">Loading…</option>
+          </select>
+          <button id="explainBtn" class="btn" disabled>Explain with AI</button>
+        </div>
+      </div>
+
+      <div id="infoCards" class="info-grid hidden" aria-live="polite"></div>
+      <p id="listError" class="error hidden"></p>
+    </section>
+
+    <section class="wrap hidden" id="mentor">
+      <div class="section-head">
+        <div>
+          <p class="step">Step 2 · Your AI mentor</p>
+          <h2 id="mentorTitle">Explanation</h2>
+        </div>
+        <span id="aiStatus" class="status"></span>
+      </div>
+      <div class="panel explanation">
+        <div id="loading" class="loading hidden">
+          <span class="spinner" aria-hidden="true"></span> Your mentor is writing the explanation…
+        </div>
+        <div id="explanation" class="md"></div>
+        <p id="aiNote" class="note hidden"></p>
+        <button id="toQuizBtn" class="btn hidden">Start the quiz</button>
+      </div>
+    </section>
+
+    <section class="wrap hidden" id="practice">
+      <div class="section-head">
+        <div>
+          <p class="step">Step 3 · Test your knowledge</p>
+          <h2>Quick Practice</h2>
+          <p class="muted">Let's see how well you understood the concept.</p>
+        </div>
+        <span id="scoreBadge" class="score">Score: 0</span>
+      </div>
+      <div id="quizList"></div>
+      <div id="finalScore" class="panel final hidden"></div>
+    </section>
+
+    <section class="wrap about" id="about">
+      <h2>About ALGOMENTOR</h2>
+      <p class="muted">ALGOMENTOR combines a small algorithm knowledge base, AI-generated explanations and instant quizzes in one place. It covers Binary Search, Linear Search, Bubble Sort, Selection Sort and Merge Sort.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">ALGOMENTOR · Mini Project · Dept. of AI &amp; DS, Datta Meghe College of Engineering, Airoli</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

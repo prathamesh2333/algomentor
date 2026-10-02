@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Binary Search",
+    "category": "Searching",
+    "difficulty": "Easy",
+    "timeComplexity": "O(log n)",
+    "spaceComplexity": "O(1)",
+    "description": "Finds a target value in a sorted array by repeatedly checking the middle element and discarding the half where the target cannot be.",
+    "exampleInput": "Array: [3, 8, 15, 23, 42, 57, 91], Target: 42"
+  },
+  {
+    "name": "Linear Search",
+    "category": "Searching",
+    "difficulty": "Easy",
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "description": "Checks every element of the array one by one, from start to end, until the target is found or the array ends.",
+    "exampleInput": "Array: [12, 7, 33, 4, 19], Target: 4"
+  },
+  {
+    "name": "Bubble Sort",
+    "category": "Sorting",
+    "difficulty": "Easy",
+    "timeComplexity": "O(n²)",
+    "spaceComplexity": "O(1)",
+    "description": "Repeatedly walks through the array, comparing neighbouring elements and swapping them if they are in the wrong order, so the largest values bubble to the end.",
+    "exampleInput": "Array: [5, 1, 4, 2, 8]"
+  },
+  {
+    "name": "Selection Sort",
+    "category": "Sorting",
+    "difficulty": "Easy",
+    "timeComplexity": "O(n²)",
+    "spaceComplexity": "O(1)",
+    "description": "Repeatedly finds the smallest element in the unsorted part of the array and moves it to the end of the sorted part.",
+    "exampleInput": "Array: [29, 10, 14, 37, 13]"
+  },
+  {
+    "name": "Merge Sort",
+    "category": "Sorting",
+    "difficulty": "Medium",
+    "timeComplexity": "O(n log n)",
+    "spaceComplexity": "O(n)",
+    "description": "A divide-and-conquer algorithm that splits the array into halves, sorts each half recursively, and merges the sorted halves back together.",
+    "exampleInput": "Array: [38, 27, 43, 3, 9, 82, 10]"
+  }
+]
